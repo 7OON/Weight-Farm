@@ -1,0 +1,19 @@
+pcall(function()
+                        if not LocalPlayer.Backpack:FindFirstChild("[Weights]") then
+                            Buy("[Weights] - $120", 1)
+                        end
+                        if LocalPlayer.Backpack:FindFirstChild("[Weights]") then
+                            LocalPlayer.Character.Humanoid:EquipTool(LocalPlayer.Backpack["[Weights]"])
+                        end
+                        LocalPlayer.Character["[Weights]"]:Activate()
+                    end
+                        if not LocalPlayer.Backpack:FindFirstChild("[HeavyWeights]") then
+                            Buy("[HeavyWeights] - $250", 1)
+                        end
+                        if LocalPlayer.Backpack:FindFirstChild("[HeavyWeights]") then
+                            LocalPlayer.Character.Humanoid:EquipTool(LocalPlayer.Backpack["[HeavyWeights]"])
+                        end
+                        LocalPlayer.Character["[HeavyWeights]"]:Activate()
+                    end
+                end)
+            end
